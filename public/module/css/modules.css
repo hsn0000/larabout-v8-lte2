@@ -1,0 +1,25 @@
+.modules .disable {
+  cursor: not-allowed;
+  background: grey;
+}
+.modules .list-group.nested-sortable {
+  margin-bottom: 0;
+}
+.modules .list-group.nested-sortable .list-group-item {
+  position: relative;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.modules .list-group.nested-sortable .list-group-item .list-title {
+  display: inline-block;
+}
+.modules .list-group.nested-sortable .list-group-item .list-tools {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+.modules .list-group.nested-sortable.nested {
+  margin-left: 35px;
+}

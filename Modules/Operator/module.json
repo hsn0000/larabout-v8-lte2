@@ -1,0 +1,21 @@
+{
+    "name": "Operator",
+    "author": "larabout",
+    "title": "operator",
+    "version": "1",
+    "alias": "operator",
+    "aliases": {},
+    "description": "",
+    "files": [
+        "Helpers/autoload.php"
+    ],
+    "keywords": [],
+    "providers": [
+        "Modules\\Operator\\Providers\\OperatorServiceProvider"
+    ],
+    "priority": 0,
+    "requires": [
+
+    ],
+    "minimumCoreVersion": ""
+}

@@ -1,0 +1,21 @@
+{
+    "name": "OperatorGroup",
+    "author": "larabout",
+    "title": "operatorgroup",
+    "version": "1",
+    "alias": "operatorgroup",
+    "aliases": {},
+    "description": "",
+    "files": [
+        "Helpers/autoload.php"
+    ],
+    "keywords": [],
+    "providers": [
+        "Modules\\OperatorGroup\\Providers\\OperatorGroupServiceProvider"
+    ],
+    "priority": 0,
+    "requires": [
+
+    ],
+    "minimumCoreVersion": ""
+}

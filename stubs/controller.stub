@@ -1,0 +1,33 @@
+<?php
+
+namespace $CLASS_NAMESPACE$;
+
+use App\Http\Controllers\Controller;
+
+class $CLASS$ extends Controller
+{
+    public function __construct()
+    {
+        parent::__construct();
+
+        /* set default mod Alias */
+        $this->middleware(function ($request, $next) {
+            $this->viewdata['mod_alias'] = '$LOWER_NAME$';
+            return $next($request);
+        });
+    }
+
+    /**
+     * $LOWER_NAME$ page
+     *
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function index()
+    {
+        /*
+         * set view data
+         */
+        $this->viewdata['page_tittle'] = modules()->generate_title('$LOWER_NAME$');
+        return view('$LOWER_NAME$::index',$this->viewdata);
+    }
+}

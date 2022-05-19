@@ -1,0 +1,86 @@
+/** login page css **/
+// body {
+//     background: #000 url('/themes/img/AdminLTELogo.png') repeat 50% 0 !important;
+// }
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000;
+    background: radial-gradient(ellipse at center, rgba(229,229,229,0) 0%,rgba(92,92,92,0) 45%,rgba(0,0,0,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e5e5e5', endColorstr='#000000',GradientType=1 );
+}
+.login-page {
+    .login-logo {
+        position: absolute;
+        top: 0;
+        width: 360px;
+    }
+    .login-box {
+        width: 360px;
+        margin: 15% auto;
+        .line-top {
+            position: inherit;
+        }
+        .input-group {
+            &.captcha {
+                margin-bottom: 10px;
+                .captcha-image {
+                    padding: 0;
+                    border-radius: 10px 0 0 10px;
+                    overflow: hidden;
+                }
+                .captcha-refresh {
+                    border-radius: 0 10px 10px 0;
+                    overflow: hidden;
+                    a {
+                        color: #ffc107;
+                    }
+                }
+                .form-control {
+                    border-left: unset;
+                    border-right: unset;
+                }
+                &:focus-within {
+                    .form-control, .input-group-addon {
+                        border-color: #ffc107;
+                    }
+                }
+            }
+            .input-group-addon {
+                border-radius: 0;
+                border-color: #d2d6de;
+                background-color: #fff;
+                &:first-child {
+                    border-right: 0;
+                }
+            }
+        }
+        .form-control {
+            border-radius: 10px;
+            &:focus , &.focus{
+                border-color: #ffc107;
+            }
+        }
+        .form-control-feedback{
+            color: #ffc107;
+        }
+        .forgot-password {
+            line-height: 34px;
+        }
+    }
+    .login-box-body, .register-box-body
+    {
+        border: 2px solid #ffc107;
+        border-radius: 10px;
+        background: #181F2A;
+        padding: 20px;
+    }
+}
+
+
+
+/** end login page css **/

@@ -1,0 +1,21 @@
+{
+    "name": "Modules",
+    "author": "larabout",
+    "title": "modules",
+    "version": "1",
+    "alias": "modules",
+    "aliases": {},
+    "description": "",
+    "files": [
+        "Helpers/autoload.php"
+    ],
+    "keywords": [],
+    "providers": [
+        "Modules\\Modules\\Providers\\ModulesServiceProvider"
+    ],
+    "priority": 0,
+    "requires": [
+
+    ],
+    "minimumCoreVersion": ""
+}

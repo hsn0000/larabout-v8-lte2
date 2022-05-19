@@ -1,0 +1,12 @@
+{
+    "/module/js/auth.js": "/module/js/auth.js",
+    "/module/js/home.js": "/module/js/home.js",
+    "/module/js/modules.js": "/module/js/modules.js",
+    "/module/js/operator.js": "/module/js/operator.js",
+    "/module/js/operatorgroup.js": "/module/js/operatorgroup.js",
+    "/module/css/operatorgroup.css": "/module/css/operatorgroup.css",
+    "/module/css/operator.css": "/module/css/operator.css",
+    "/module/css/modules.css": "/module/css/modules.css",
+    "/module/css/home.css": "/module/css/home.css",
+    "/module/css/auth.css": "/module/css/auth.css"
+}

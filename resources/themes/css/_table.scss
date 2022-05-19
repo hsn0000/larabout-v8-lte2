@@ -1,0 +1,217 @@
+div.dtr-modal {z-index: 9999;}
+.table-container {
+    display: none;
+    margin: 0 -10px;
+    &.show{
+        margin: 0;
+        .table {
+            margin-bottom: 0px;
+        }
+    }
+    .table-bordered {
+        border: none !important;
+        border-bottom: 1px solid #dadada;
+        thead {
+            tr {
+                background: rgba(2,2,2,1);
+                background: -moz-linear-gradient(top, rgba(2,2,2,1) 0%, rgba(41,41,41,1) 100%);
+                background: -webkit-linear-gradient(top, rgba(2,2,2,1) 0%, rgba(41,41,41,1) 100%);
+                background: -o-linear-gradient(top, rgba(2,2,2,1) 0%, rgba(41,41,41,1) 100%);
+                background: -ms-linear-gradient(top, rgba(2,2,2,1) 0%, rgba(41,41,41,1) 100%);
+                background: linear-gradient(to bottom, rgba(2,2,2,1) 0%, rgba(41,41,41,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#020202', GradientType=0 );
+                color: #fff;
+                th {
+                    border: 1px solid rgba(2,2,2,1) !important;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        tbody , tfoot , thead {
+            tr {
+                &:last-child{
+                    td {
+                        border-bottom: 1px solid #dadada !important;
+                    }
+                }
+                &:nth-of-type(odd) {
+                    background-color: unset;
+                }
+                &:nth-of-type(even) {
+                    background-color: #f5f5f5;
+                }
+                th , td {
+                    border: 1px solid #dadada;
+                    border-left-width:0 !important;
+                    border-bottom-width: 0 ;
+                    &:first-child {
+                        border-left-width: 0;
+                    }
+                    &:last-child {
+                        border-right-width: 0;
+                    }
+                    .mt-ios {
+                        label {
+                            margin-bottom: 0!important;
+                        }
+                    }
+                    .help-block {
+                        margin: 0;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    table.dataTable {
+        thead {
+            & .sorting ,& .sorting_asc ,& .sorting_asc ,& .sorting_asc ,& .sorting_asc_disabled,& .sorting_desc_disabled{
+                &:after {
+                    top: 8px;
+                    bottom: unset;
+                }
+            }
+        }
+    }
+    .table {
+        width: 100%;
+        & > tbody , & > tbody ,& > tfoot {
+            >tr {
+                & > td , & > th {
+                    vertical-align: middle;
+                    padding: 8px;
+                    line-height: 1.428571429;
+                    font-size: 15px;
+                }
+                >th {
+                    font-size: 14px;
+                }
+            }
+        }
+        .active-operator {
+            label {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .table-hover {
+        >tbody {
+            >tr {
+                &:hover {
+                    >td {
+                        background-color: #ffc !important;
+                    }
+                }
+            }
+        }
+    }
+    .dataTables_wrapper {
+        /*
+         * data table style
+         */
+        .dataTables_length , .dataTables_info {
+            text-align: left;
+            padding: 0 10px;
+        }
+        .pagination {
+            margin: 2px 15px !important;
+            > li {
+                > a , > span {
+                    padding: 3px 12px;
+                }
+            }
+            >.active>a, >.active>a:focus, >.active>a:hover, >.active>span, >.active>span:focus, >.active>span:hover {
+                z-index: 3;
+                cursor: default;
+                border: solid 1px #ffc107;
+                color: #ffff;
+                background: linear-gradient(to bottom, rgb(17 17 17) 0%, rgb(0 0 0 / 78%) 49%, rgb(25 25 25) 100%);
+                // background: rgba(54,74,110,1);
+                // background: -moz-linear-gradient(top, rgba(54,74,110,1) 0%, rgba(42,57,84,1) 49%, rgba(25,33,45,1) 100%);
+                // background: -webkit-linear-gradient(top, rgba(54,74,110,1) 0%, rgba(42,57,84,1) 49%, rgba(25,33,45,1) 100%);
+                // background: -o-linear-gradient(top, rgba(54,74,110,1) 0%, rgba(42,57,84,1) 49%, rgba(25,33,45,1) 100%);
+                // background: -ms-linear-gradient(top, rgba(54,74,110,1) 0%, rgba(42,57,84,1) 49%, rgba(25,33,45,1) 100%);
+                // background: linear-gradient(to bottom, rgba(54,74,110,1) 0%, rgba(42,57,84,1) 49%, rgba(25,33,45,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#364a6e', endColorstr='#19212d', GradientType=0 );
+                outline: none;
+            }
+        }
+        div.dataTables_processing {
+            //display: none!important;
+        }
+    }
+}
+.table-action {
+    .left-action{
+        float: left;
+    }
+    .right-action {
+        float: right;
+    }
+    .left-action , .right-action {
+        display: inline-block;
+    }
+    .btn-filter{
+        margin-top: -3px;
+    }
+    .dropdown-menu {
+        padding: 0;
+        > li {
+            > a {
+                padding: 5px 10px;
+            }
+        }
+    }
+    .btn-group{
+        margin-top: -5px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .table-action {
+        .list-inline {
+            li {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+/**
+ * table on modal style
+ */
+.dtr-bs-modal{
+    .modal-body {
+        .table {
+            tr {
+                &:first-child {
+                    td {
+                        border-top: 1px solid #dadada;
+                    }
+                }
+                td{
+                    height: 47px;
+                    vertical-align: middle;
+                    padding: 8px;
+                    line-height: 1.428571429;
+                    font-size: 15px;
+                    border: 1px solid #dadada;
+                    text-align: left!important;
+                    .active-operator {
+                        label {
+                            margin-bottom: 0;
+                        }
+                    }
+                    .help-block {
+                        margin: 0;
+                        font-size: 12px;
+                    }
+                }
+                &:nth-child(odd) {
+                    background: #f5f5f5;
+                }
+            }
+        }
+    }
+}

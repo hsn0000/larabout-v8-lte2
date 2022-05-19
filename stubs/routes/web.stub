@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use Modules\$STUDLY_NAME$\Http\Controllers\$STUDLY_NAME$Controller;
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::prefix('$LOWER_NAME$')->name('$LOWER_NAME$')->middleware(['restriction','allowed-domain'])->group(function() {
+
+    Route::middleware('auth')->group(function() {
+        /*
+         * if authenticated
+         */
+        Route::any('/', [$STUDLY_NAME$Controller::class,'index'])->middleware('block-page:$LOWER_NAME$,read');
+
+    });
+
+    Route::middleware('guest')->group(function() {
+        /*
+         * if guest
+         */
+    });
+});

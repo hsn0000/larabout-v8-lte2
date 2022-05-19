@@ -1,0 +1,7 @@
+{
+    "Auth": true,
+    "Home": true,
+    "Modules": true,
+    "OperatorGroup": true,
+    "Operator": true
+}

@@ -1,0 +1,26 @@
+.modules {
+    .disable{
+        cursor: not-allowed;
+        background: grey;
+    }
+    .list-group.nested-sortable {
+        margin-bottom: 0;
+        .list-group-item{
+            position: relative;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+            border-radius: 5px;
+            margin-bottom: 5px;
+            cursor: grab;
+            .list-title {
+                display: inline-block;
+            }
+            .list-tools {
+                margin-top: -5px;
+                margin-bottom: -5px;
+            }
+        }
+        &.nested {
+            margin-left: 35px;
+        }
+    }
+}

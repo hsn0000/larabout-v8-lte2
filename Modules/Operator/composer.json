@@ -1,0 +1,26 @@
+{
+    "name": "larabout/operator",
+    "description": "",
+    "authors": [
+        {
+            "name": "larabout",
+            "email": "larabout@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "files": [
+            "Helpers/autoload.php"
+        ],
+        "psr-4": {
+            "Modules\\Operator\\": ""
+        }
+    }
+}

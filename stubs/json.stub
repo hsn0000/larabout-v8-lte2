@@ -1,0 +1,21 @@
+{
+    "name": "$STUDLY_NAME$",
+    "author": "larabout",
+    "title": "$LOWER_NAME$",
+    "version": "1",
+    "alias": "$LOWER_NAME$",
+    "aliases": {},
+    "description": "",
+    "files": [
+        "Helpers/autoload.php"
+    ],
+    "keywords": [],
+    "providers": [
+        "$MODULE_NAMESPACE$\\$STUDLY_NAME$\\$PROVIDER_NAMESPACE$\\$STUDLY_NAME$ServiceProvider"
+    ],
+    "priority": 0,
+    "requires": [
+
+    ],
+    "minimumCoreVersion": ""
+}
